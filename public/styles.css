@@ -1,0 +1,72 @@
+/* General Body and HTML Styling */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    display: flow-root;
+    justify-content: center;
+    align-items: center;
+    background-image: url('space.png');
+    /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Overlay to add some shading to the background */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    /* Dark overlay */
+    z-index: -1;
+    /* Ensures it stays behind the text */
+}
+
+/* Container for the content */
+.container {
+    text-align: center;
+    z-index: 1;
+    /* Keep the content above the overlay */
+}
+
+/* Styling for the Title */
+h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* Styling for Subtitle */
+p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* Styling for Enter Button */
+.enter-button {
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #f39c12;
+    color: white;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.enter-button:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+.enter-button:active {
+    transform: scale(0.95);
+}
